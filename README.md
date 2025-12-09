@@ -1,5 +1,9 @@
 # 🎸 Guitar Amplifier
 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://theQuarky.github.io/guitar-amplifier/)
+
+**[🚀 Try the Live Demo](https://theQuarky.github.io/guitar-amplifier/)**
+
 A web-based guitar amplifier application built with React and the Web Audio API. This application allows you to plug your guitar into your computer's audio input and process the sound with real-time EQ controls and visual feedback.
 
 ## ✨ Features
