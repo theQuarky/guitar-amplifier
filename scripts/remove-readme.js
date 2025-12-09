@@ -12,7 +12,7 @@ const buildDir = path.join(__dirname, '..', 'build');
 
 try {
   const files = fs.readdirSync(buildDir);
-  const readmeFiles = files.filter(file => /^readme\.md$/i.test(file));
+  const readmeFiles = files.filter(file => /^readme(\.(md|txt|rst))?$/i.test(file));
   
   readmeFiles.forEach(file => {
     const filePath = path.join(buildDir, file);
