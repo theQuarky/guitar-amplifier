@@ -19,7 +19,7 @@
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && rm -f build/README.md build/readme.md",
+    "predeploy": "npm run build && rm -f build/[Rr][Ee][Aa][Dd][Mm][Ee].md",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
