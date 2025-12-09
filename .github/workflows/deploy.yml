@@ -36,7 +36,7 @@ jobs:
           NODE_OPTIONS: --openssl-legacy-provider
 
       - name: Remove README from build
-        run: find ./build -iname 'readme.md' -delete
+        run: find ./build -iname 'readme.md' -delete || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

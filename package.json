@@ -19,7 +19,7 @@
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && find build -iname 'readme.md' -delete",
+    "predeploy": "npm run build && node scripts/remove-readme.js",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
