@@ -24,6 +24,9 @@ try {
     console.log('No README files found in build directory');
   }
 } catch (error) {
-  // Silently fail if build directory doesn't exist or other errors occur
-  // This prevents deployment from failing if there's nothing to remove
+  // Log error for debugging but don't fail the deployment
+  // This could be due to missing build directory or permission issues
+  if (error.code !== 'ENOENT') {
+    console.warn('Warning: Could not remove README files:', error.message);
+  }
 }
